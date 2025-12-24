@@ -1,0 +1,19 @@
+{
+  "name": "dads-bundling-tools",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tsx": "^4.7.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "build": "tsx index.ts"
+  },
+  "dependencies": {
+    "esbuild": "^0.27.2"
+  }
+}
