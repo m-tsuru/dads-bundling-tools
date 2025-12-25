@@ -1,0 +1,23 @@
+html {
+  max-width: 70ch;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+}
+
+body {
+  background-color: #fefefe;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  display: grid;
+  row-gap: calc(16 / 16 * 1rem);
+  padding-left: 0;
+  list-style-type: none;
+}
