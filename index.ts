@@ -11,6 +11,7 @@ async function getFilesList(repository: string) {
         .filter(i => (i.path.endsWith('.css') || i.path.endsWith('.js')))
         .filter(i =>
             !i.path.endsWith('.test.js') &&
+            !i.path.endsWith('.unit.js') &&
             !i.path.endsWith('.vrt.js') &&
             !i.path.endsWith('.stories.css')
         )
