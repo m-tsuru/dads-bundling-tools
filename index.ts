@@ -9,7 +9,11 @@ async function getFilesList(repository: string) {
     const files = data.tree
         .filter(i => i.path.startsWith('src/'))
         .filter(i => (i.path.endsWith('.css') || i.path.endsWith('.js')))
-        .filter(i => !i.path.endsWith('.test.js') && !i.path.endsWith('.stories.css'))
+        .filter(i =>
+            !i.path.endsWith('.test.js') &&
+            !i.path.endsWith('.vrt.js') &&
+            !i.path.endsWith('.stories.css')
+        )
         .map(i => i.path);
     return files;
 }
